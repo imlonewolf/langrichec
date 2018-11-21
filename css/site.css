@@ -247,6 +247,40 @@ section.jumbotron {
     width: 8em;  
 }
 
+.discount-banner-percent {
+    background-image: url("/images/discount-banner-percent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 21em;
+    width: 100%;
+}
+
+.user-voice-link {
+    color: #999;
+    display: inline-block;
+    font-size: 0.7em;
+    background: #fff;
+    border-radius: 14px;
+    -webkit-border-radius: 1em;
+    padding: 0.2em 0.9em;
+    -moz-border-radius: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+
+.user-voice-link::before {
+    display: inline-block;
+    content: "≫";
+    color: #ea9353;
+    font-size: 1em;
+    width: 1em;
+    height: 1em;
+    float: left;
+    margin-top: -0.1em;
+    margin-right: 0.1em;
+}
 
 .wls-message {
     font-size: 1.4em;
