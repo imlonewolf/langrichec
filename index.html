@@ -7,24 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="/vendor/bootstrap-4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="/vendor/bootstrap-4.1.3/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="/vendor/fontawesome-free-5.5.0-web/css/all.min.css">
   <link rel="stylesheet" href="/css/overrides.css">
   <link rel="stylesheet" href="/css/site.css">
-
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
 </head>
 
 <body>
-    <header>
-      <div class="navbar navbar-light box-shadow">
-        <div class="container d-flex">
-          <a href="#" class="navbar-brand d-flex align-items-center mr-auto ec-langrich-logo"></a>
-          
-          <button class="btn btn-xl btn-outline-primary mx-1 px-3">Sign-in</button>
-          <button class="btn btn-xl btn-primary mx-1 px-2">Register for Free</button>
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex px-1">
+            <a href="#" class="navbar-brand d-flex align-items-center mr-auto ec-langrich-logo"></a>
+
+            <button class="btn btn-xl btn-signin btn-outline-primary mx-1 px-3">ログイン</button>
+            <button class="btn btn-xl btn-register btn-primary mx-1 px-2">無料登録</button>
         </div>
-      </div>
-    </header>
+    </nav>
 
     <main role="main">
+        <a class="contact-us-widget shadow-lg" href="//www.englishcentral.com/support" target="_blank">
+            <span class="mr-1">Contact Us</span>
+            <span class="fas fa-question-circle"></span>
+        </a>
       <section class="jumbotron banner text-center">
         <div class="container d-flex">
             <div class="banner-intro"></div>
@@ -197,11 +200,14 @@
         </div>
       </section>
     </main>
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-        </p>
-      </div>
+    <footer class="footer py-2">
+        <div class="container d-flex justify-content-between align-items-center h-100 footer-content">
+            <span class="powered-by">Your English Life powered by Langrich & EnglishCentral</span>
+            <a class="back-to-top">
+                <span>Back to Top</span>
+                <span class="fas fa-chevron-circle-up"></span>
+            </a>
+        </div>
     </footer>
     <script>
     function async(u, c) {

@@ -1,9 +1,37 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.site-header {
+    background: #fff;
+    border-bottom: solid 3px #831632;
+}
+
+.contact-us-widget {
+    position: fixed;
+    right: 0;
+    background-color: #495057;
+    color: #fff;
+    padding: 0.5em 0.7em 0.5em 1.1em;
+    z-index: 9;
+    border-radius: 1.5em 0 0 1.5em;
+    top: 6.5em;
+}
+.contact-us-widget:hover {
+    color: #fff;
+}
+
 .ec-langrich-logo {
-    background: url("/images/ec-langich-logo.png");
+    background-image: url("/images/ec-langich-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
-    width: 9em;
+    width: 8em;
     height: 2em;
 }
 
@@ -12,7 +40,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     height: 29em;
-    border-top: solid 3px #831632;
     border-bottom: solid 3px #831632;
     border-radius: 0;
     background-size: cover;
@@ -196,7 +223,6 @@ section.jumbotron {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 5%;
-    height: 40em;
     border-radius: 0;
 }
 
@@ -261,10 +287,10 @@ section.jumbotron {
     display: inline-block;
     font-size: 0.7em;
     background: #fff;
-    border-radius: 14px;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     padding: 0.2em 0.9em;
-    -moz-border-radius: 14px;
+    -moz-border-radius: 1em;
     box-shadow: 0 1px 4px rgba(0,0,0,.2);
     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
     -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
@@ -290,10 +316,43 @@ section.jumbotron {
     font-size: 1.4em;
 }
 
+.footer-content {
+
+}
+
+.powered-by {
+    font-size: 0.8em;
+}
+
+.back-to-top {
+    cursor: pointer;
+    fon-size: 1em;
+}
+
+footer {
+    background-color: #DDDDDD;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
 
 @media (max-width: 575px) {
     .feature-item {
         border: none !important;
+    }
+
+    .ec-langrich-logo {
+        background-image: url("/images/ec-langich-logo-min.png");
+        width: 6em;
+        height: 2em;
+        margin-left: 0.4em;
+    }
+
+    .btn-signin,
+    .btn-register {
+        padding-right: 0.5em !important;
+        padding-left:  0.5em !important;
     }
 }
 
