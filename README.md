@@ -1,0 +1,2 @@
+# langrichec
+Langrich landing page
