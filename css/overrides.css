@@ -1,0 +1,24 @@
+.btn-outline-primary:hover,
+.btn-outline-primary:not([disabled]):not(.disabled):active,
+.btn-outline-primary:not([disabled]):not(.disabled).active{
+    background: #9C232A;
+    border: 1px solid #9C232A;
+}
+
+.btn-outline-primary {
+    border: 1px solid #9C232A;
+    color: #9C232A;
+}
+
+.btn-primary:hover,
+.btn-primary:not([disabled]):not(.disabled):active,
+.btn-primary:not([disabled]):not(.disabled).active{
+    background: #9C232A;
+    border: 1px solid #9C232A;
+}
+
+.btn-primary {
+    background: #9C232A;
+    border: 1px solid #9C232A;
+    color: #fff;
+}

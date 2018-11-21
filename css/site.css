@@ -1,0 +1,260 @@
+.ec-langrich-logo {
+    background: url("/images/ec-langich-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 9em;
+    height: 2em;
+}
+
+.banner {
+    background: url("/images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 29em;
+    border-top: solid 3px #831632;
+    border-bottom: solid 3px #831632;
+    border-radius: 0;
+    background-size: cover;
+}
+
+.banner-intro {
+    background: url("/images/banner-intro.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 25em;
+    width: 100%;
+}
+
+section.jumbotron {
+    margin-bottom: 0;
+}
+
+.features {
+    padding: 0;
+    background-image: -moz-linear-gradient(top,#fff 0,#efede5 100%);
+    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(0,#fff),color-stop(100%,#efede5));
+    background-image: -webkit-linear-gradient(top,#fff 0,#efede5 100%);
+    background-image: -o-linear-gradient(top,#fff 0,#efede5 100%);
+    background-image: -ms-linear-gradient(top,#fff 0,#efede5 100%);
+    background-image: linear-gradient(top,#fff 0,#efede5 100%);
+}
+
+.feature-main-title {
+    background: url("/images/dialog_3star.png");
+    background-repeat: no-repeat;
+    padding-left: 1.7em;
+    background-position: 0 20%;
+    display: inline-block;
+    font-weight: normal;
+    color: #3c3c3c;
+}
+.feature-sub-title {
+    font-size: 0.6em;
+    display: block;
+    color: #9e8f85;
+    font-weight: normal;
+}
+.feature-item {
+    padding-top: 1em;
+    padding-bottom: 8.9em;
+    border-left: dashed 1px #333;
+}
+.feature-item:last-child {
+    border-right: dashed 1px #333;
+}
+
+.feature-item-1,
+.feature-item-3,
+.feature-item-5 {
+    background: #fff;
+}
+
+.feature-item-1 {
+    background-image: url("/images/fivefeature1.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.feature-item-2 {
+    background-image: url("/images/fivefeature2.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.feature-item-3 {
+    background-image: url("/images/fivefeature3.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.feature-item-4 {
+    background-image: url("/images/fivefeature4.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.feature-item-5 {
+    background-image: url("/images/fivefeature5.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.feature-item-1 h1 {
+    color: #D16180;
+}
+
+.feature-item-2 h1 {
+    color: #5A95D7;
+}
+
+.feature-item-3 h1 {
+    color: #9FC72D;
+}
+
+.feature-item-4 h1 {
+    color: #7D1991;
+}
+
+.feature-item-5 h1 {
+    color: #197DAF;
+}
+
+
+.offer {
+    background: #fff;
+}
+
+.offer-main-title {
+    background: url("/images/icon_headphone.png");
+    background-repeat: no-repeat;
+    padding-left: 1.7em;
+    background-position: 0 20%;
+    font-weight: normal;
+    color: #3c3c3c;
+    border-bottom: solid 1px #ccc;
+}
+
+.offer-sub-title {
+    font-size: 0.6em;
+    display: block;
+    color: #9e8f85;
+    font-weight: normal;
+}
+
+.point-item {
+    font-size: 1.5em;
+    color: #D70D6D;
+}
+
+.offer-point {
+    font-size: 1.8em;
+}
+
+.point-2 {
+    color: #0080FF;
+}
+
+.point-description {
+    font-size: 0.9em;
+}
+
+.image-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 13em;
+    width: 100%;    
+}
+
+.image-item-1 {
+    background-image: url("/images/img-gallery1.jpg");
+}
+.image-item-2 {
+    background-image: url("/images/img-gallery2.jpg");
+}
+.image-item-3 {
+    background-image: url("/images/img-gallery3.jpg");
+}
+.image-item-4 {
+    background-image: url("/images/img-gallery4.png");
+}  
+
+.how-it-works {
+    background: url("/images/banner-upgrade.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 5%;
+    height: 40em;
+    border-radius: 0;
+}
+
+.commit-message {
+    margin-top: 4.2em;
+}
+.percent-highlight {
+    font-size: 5em;
+    color: #FF4000;
+    font-family: serif;
+}
+
+.guaranteed-highlight {
+    color: #871c2c;
+}
+
+.lady-cheer {
+    background: url("/images/lady.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 26em;
+    width: 100%;
+}
+
+.banner-button {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 18em;
+    width: 100%; 
+    background-image: url("/images/big-button-banner.png");    
+}
+
+.icon-wls {
+    background: url("/images/wls-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 7em;
+    width: 8em;
+}
+
+.icon-tutor {
+    background: url("/images/tutor-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 7em;
+    width: 8em;  
+}
+
+
+.wls-message {
+    font-size: 1.4em;
+}
+
+.tutor-message {
+    font-size: 1.4em;
+}
+
+
+@media (max-width: 575px) {
+    .feature-item {
+        border: none !important;
+    }
+}
+
+@media (max-width: 780px) {
+    .feature-item {
+        border: none !important;
+    }
+}
