@@ -136,6 +136,16 @@ section.jumbotron {
     border-bottom: solid 1px #ccc;
 }
 
+.user-voice-main-title {
+    background: url("/images/voice-icon.png");
+    background-repeat: no-repeat;
+    padding-left: 2.4em;
+    background-position: 0 20%;
+    font-weight: normal;
+    color: #3c3c3c;
+    border-bottom: solid 1px #ccc;
+}
+
 .offer-sub-title {
     font-size: 0.6em;
     display: block;
