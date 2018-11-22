@@ -264,7 +264,7 @@ section.jumbotron {
     background-position: 50%;
     height: 18em;
     width: 100%; 
-    background-image: url("/images/big-button-banner.png");    
+    background-image: url("/images/big-button-banner-trans.png");
 }
 
 .icon-wls {
@@ -408,6 +408,12 @@ section.jumbotron {
 
 .activity-thumbnail-video {
     display: inline-block;
+    cursor: pointer;
+}
+
+.activity-thumbnail-video video {
+    height: 9.13em;
+    width: 14.13em;
 }
 .activity-poster {
     background-size: cover;
@@ -431,6 +437,13 @@ section.jumbotron {
 
 .activity-golive-poster {
     background-image: url("/images/video-poster/golive.jpg");
+}
+
+.partners {
+    background-color: #FAF9F6;
+    box-shadow: 0 4px 2px rgba(0,0,0,.05)inset;
+    -moz-box-shadow: 0 4px 2px rgba(0,0,0,.05)inset;
+    -webkit-box-shadow: 0 4px 2px rgba(0,0,0,.05)inset;
 }
 
 .footer-content {
