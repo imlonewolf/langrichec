@@ -43,15 +43,25 @@ body {
     border-bottom: solid 3px #831632;
     border-radius: 0;
     background-size: cover;
+    padding-top: 0;
 }
 
 .banner-intro {
     background: url("/images/banner-intro.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50%;
-    height: 25em;
-    width: 100%;
+    background-position: center;
+    height: 28.84em;
+    width: 60em;
+    position: relative;
+}
+
+#landing-intro-video {
+    position: absolute;
+    top: 4em;
+    right: 4em;
+    height: 21em;
+    width: 35em;
 }
 
 section.jumbotron {
@@ -316,6 +326,113 @@ section.jumbotron {
     font-size: 1.4em;
 }
 
+.latest-main-title {
+    background: url("/images/dialog_3star.png");
+    background-repeat: no-repeat;
+    padding-left: 1.7em;
+    background-position: 0 20%;
+    font-weight: normal;
+    color: #3c3c3c;
+}
+
+.latest-sub-title {
+    font-size: 0.6em;
+    display: block;
+    color: #9e8f85;
+    font-weight: normal;
+}
+
+.langrich-upgrade-step {
+    background-image: url("/images/langrich_upgrade.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 26em;
+    width: 100%;
+}
+
+.step-thumb {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 5em;
+    width: 5em;
+
+}
+
+.step-wrap .fa-arrow-right {
+    font-size: 2em;
+    color: #9A0000;
+}
+
+.step-watch-thumb {
+    background-image: url("/images/watch.png");
+}
+
+
+.step-learn-thumb {
+    background-image: url("/images/learn.png");
+}
+
+
+.step-speak-thumb {
+    background-image: url("/images/speak.png");
+    height: 6em;
+    width: 6em;
+}
+
+.step-golive-thumb {
+    background-image: url("/images/golive.png");
+}
+
+.step-text {
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.step-watch-text {
+    color: #0097D4;
+}
+
+.step-learn-text {
+    color: #E71200;
+}
+
+.step-speak-text {
+    color: #8FC710;
+}
+
+.step-golive-text {
+    color: #F6B700;
+}
+
+.activity-thumbnail-video {
+    display: inline-block;
+}
+.activity-poster {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 9em;
+    width: 14em;
+}
+
+.activity-watch-poster {
+    background-image: url("/images/video-poster/watch.jpg");
+}
+
+.activity-learn-poster {
+    background-image: url("/images/video-poster/learn.jpg");
+}
+
+.activity-speak-poster {
+    background-image: url("/images/video-poster/speak.jpg");
+}
+
+.activity-golive-poster {
+    background-image: url("/images/video-poster/golive.jpg");
+}
+
 .footer-content {
 
 }
@@ -353,6 +470,32 @@ footer {
     .btn-register {
         padding-right: 0.5em !important;
         padding-left:  0.5em !important;
+    }
+
+    .banner {
+        height: 20em;
+    }
+
+    .banner-intro {
+        background-image: none;
+    }
+
+    #landing-intro-video {
+        height: 17em;
+        width: 18em;
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 0.5em;
+    }
+
+    .gallery-wrap,
+    .lady-cheer-wrap {
+        display: none;
+    }
+
+    .step-wrap {
+        justify-content: flex-start !important;
     }
 }
 
