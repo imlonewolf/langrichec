@@ -318,6 +318,60 @@ section.jumbotron {
     margin-right: 0.1em;
 }
 
+.user-stories-list {
+}
+
+
+
+.story-item {
+    border-left: dotted 1px #ccc;
+    border-right: dotted 1px #ccc;
+    border-bottom: dotted 1px #ccc;
+    padding: 0.8em;
+    font-size: 0.9em;
+}
+
+.user-author {
+    font-weight: bold;
+    font-size: 0.7em;
+    margin: 0.4em 0;
+}
+
+.stories-pagination {
+    border-top: none;
+}
+
+.story-paginator-nav {
+    border: solid 1px #eee;
+    border-top: none;
+    cursor: pointer;
+    box-shadow: -1px 0 0 #e3e3e3 inset;
+    -moz-box-shadow: -1px 0 0 #e3e3e3 inset;
+    -webkit-box-shadow: -1px 0 0 #e3e3e3 inset;
+    background-image: -moz-linear-gradient(top,#f6f6f6 0,#ececec 100%);
+    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(0,#f6f6f6),color-stop(100%,#ececec));
+    background-image: -webkit-linear-gradient(top,#f6f6f6 0,#ececec 100%);
+    background-image: -o-linear-gradient(top,#f6f6f6 0,#ececec 100%);
+    background-image: -ms-linear-gradient(top,#f6f6f6 0,#ececec 100%);
+    background-image: linear-gradient(top,#f6f6f6 0,#ececec 100%);
+    padding: 0.2em 0;
+    font-size: 1em;
+}
+.previous-story-nav {
+    border-radius:0 0 0 1em;
+    border-right: solid 1px #eee;
+}
+
+.next-story-nav {
+    border-left: none;
+    border-radius: 0 0 1em 0;
+}
+
+.disable-nav {
+    color: #D0CECE !important;
+    cursor: default;
+}
+
 .wls-message {
     font-size: 1.4em;
 }
@@ -446,6 +500,85 @@ section.jumbotron {
     -webkit-box-shadow: 0 4px 2px rgba(0,0,0,.05)inset;
 }
 
+.partner-logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 5em;
+    width: 7em;
+}
+
+.partner-logo-his {
+    background-image: url("/images/partners/logo_his.png");
+}
+
+.partner-logo-japex {
+    background-image: url("/images/partners/logo_japex.png");
+    width: 9em;
+}
+
+.partner-logo-leverages {
+    background-image: url("/images/partners/logo_leverages.png");
+    width: 9em;
+}
+
+.partner-logo-kyb {
+    background-image: url("/images/partners/logo_kyb.png");
+}
+
+.partner-logo-plandoseeoinc {
+    background-image: url("/images/partners/logo_pds.png");
+    width: 11em;
+}
+
+.partner-logo-marktec {
+    background-image: url("/images/partners/logo_marktec.png");
+    width: 11em;
+}
+
+.partner-logo-recruit {
+    background-image: url("/images/partners/logo_recruit.png");
+    width: 8em;
+}
+
+.partner-logo-hitachi {
+    background-image: url("/images/partners/logo_hitachi.png");
+    width: 8em;
+}
+
+.partner-logo-rohto {
+    background-image: url("/images/partners/logo_rohto.png");
+}
+
+.partner-logo-osakagas {
+    background-image: url("/images/partners/logo_osakagas.png");
+    width: 9em;
+}
+
+.partner-logo-taiyoholdings {
+    background-image: url("/images/partners/logo_taiyo-holdings.png");
+    width: 15em;
+}
+
+.partner-logo-cmk {
+    background-image: url("/images/partners/logo_cmk.png");
+}
+
+.partner-logo-jgi {
+    background-image: url("/images/partners/logo_jgi.png");
+    width: 4em;
+}
+
+.partner-logo-emergogroup {
+    background-image: url("/images/partners/logo_emergo.png");
+    width: 14em;
+}
+
+.partner-logo-plus {
+    background-image: url("/images/partners/logo_plus.png");
+    width: 5em;
+}
+
 .footer-content {
 
 }
@@ -509,6 +642,9 @@ footer {
 
     .step-wrap {
         justify-content: flex-start !important;
+    }
+    .contact-us-widget {
+        top: 3.5em;
     }
 }
 

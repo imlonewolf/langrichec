@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="/css/site.css">
     <link rel="icon" type="image/png" href="/images/favicon.png"/>
     <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/vendor/lodash/lodash.min.js"></script>
     <script type="text/javascript" src="/js/site.js"></script>
 </head>
 <body>
@@ -20,22 +19,14 @@
     <div class="container d-flex px-1">
         <a href="#" class="navbar-brand d-flex align-items-center mr-auto ec-langrich-logo"></a>
 
-            <button class="btn btn-xl btn-signin btn-outline-primary mx-1 px-3">ログイン</button>
-            <button class="btn btn-xl btn-register btn-primary mx-1 px-2">無料登録</button>
-<!--
-        <ec-authentication-modal-app
-                mode="login"
-                login-launch-button-text="ログイン"
-                register-launch-button-text="無料登録"
-                login-launch-button-enabled="true"
-                register-launch-button-enabled="true"></ec-authentication-modal-app>
--->
+        <button class="btn btn-xl btn-signin btn-outline-primary mx-1 px-3">ログイン</button>
+        <button class="btn btn-xl btn-register btn-primary mx-1 px-2">無料登録</button>
     </div>
 </nav>
 
 <main role="main">
     <a class="contact-us-widget shadow-lg" href="//www.englishcentral.com/support" target="_blank">
-        <span class="mr-1">お問い合わせ</span>
+        <span class="mr-1">Contact Us</span>
         <span class="fas fa-question-circle"></span>
     </a>
     <section class="jumbotron banner text-center">
@@ -50,247 +41,19 @@
 
         </div>
     </section>
-    <section class="jumbotron features text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-10 offset-xl-1 text-left py-4">
-                    <h4 class="feature-main-title">ラングリッチ 5つの特長
-                        <span class="feature-sub-title">Five features</span>
-                    </h4>
-                </div>
-            </div>
-            <div class="row feature-items">
-                <div class="col-xl-2 px-0 offset-xl-1 feature-item feature-item-1">
-                    <h1 class="feature-title mb-3">1</h1>
-                    <p>
-                        毎日話して<br/>
-                        月額6,000円
-                    </p>
-                    <p class="px-2">
-                        低価格×高品質を実現したオンライン英会話。講師・教材・カリキュラムなど、品質面でも他社の追随を許しません。
-                    </p>
-                </div>
-
-                <div class="col-xl-2 px-0 feature-item feature-item-2">
-                    <h1 class="feature-title mb-3">2</h1>
-                    <p>
-                        じっくり話せる<br/>
-                        完全マンツーマン制
-                    </p>
-                    <p class="px-2">
-                        英語上達の秘訣はとにかく沢山話すこと。完全マンツーマンのオンライン英会話で英語力を伸ばしましょう！
-                    </p>
-                </div>
-
-                <div class="col-xl-2 px-0 feature-item feature-item-3">
-                    <h1 class="feature-title mb-3">3</h1>
-                    <p>
-                        どこでも<br/>
-                        学べる英会話
-                    </p>
-                    <p class="px-2">
-                        スマートフォン・タブレット対応で、いつでもどこでも自由にオンライン英会話をお楽しみいただけます。
-                    </p>
-                </div>
-
-                <div class="col-xl-2 px-0 feature-item feature-item-4">
-                    <h1 class="feature-title mb-3">4</h1>
-                    <p>
-                        ビデオレッスンで<br/>
-                        学習効果UP!
-                    </p>
-                    <p class="px-2">
-                        光回線導入済みのオフィスから、クリアな音声・映像によるビデオレッスンをお届けいたします！
-                    </p>
-                </div>
-
-                <div class="col-xl-2 px-0 feature-item feature-item-5">
-                    <h1 class="feature-title mb-3">5</h1>
-                    <p>
-                        業界トップクラスの<br/>
-                        サービス提供時間
-                    </p>
-                    <p class="px-2">
-                        早朝5時～深夜1時までサービスを提供しているので、社会人の方から、主婦・学生の方まで、幅広いニーズにお応えいたします。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="jumbotron offer pb-0">
         <div class="container">
             <div class="row">
-                <div class="col-xl-8 pr-4">
-                    <h4 class="offer-main-title pb-2">ラングリッチが選ばれる理由
-                        <span class="offer-sub-title">Why Choose Langrich</span>
-                    </h4>
-                    <div class="row gallery-wrap">
-                        <div class="col-xl-6 mb-4">
-                            <div class="image-item image-item-1"></div>
-                        </div>
-                        <div class="col-xl-6 mb-4">
-                            <div class="image-item image-item-2"></div>
-                        </div>
-                    </div>
-                    <div class="row gallery-wrap">
-                        <div class="col-xl-6 mb-4">
-                            <div class="image-item image-item-3"></div>
-                        </div>
-                        <div class="col-xl-6 mb-4">
-                            <div class="image-item image-item-4"></div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xl-12">
-
-                        <span class="d-flex point-item align-items-center mt-4 mb-4">
-                            <span class="offer-point mr-3">1</span> 安定したレッスン環境</span>
-                            </span>
-                            <ul class="pl-4 point-description">
-                                <li>日本大使館も入居しているビルで、回線品質も良く安定したレッスンを提供することが出来ます。</li>
-                            </ul>
-
-                            <span class="d-flex point-item align-items-center mb-4">
-                            <span class="offer-point point-2 mr-3">2</span> トップ2%で構成 されるハイレベル講師陣
-                        </span>
-                            <ul class="pl-4 point-description">
-                                <li>ラングリッチの講師陣は、採用後もレッスンを提供していない空き時間などに継続的にトレーニングと能力査定を受けることで恒常的なレッスン品質向上を行っています。</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 px-4">
-                    <h4 class="user-voice-main-title pb-2">お客様の声
-                        <span class="offer-sub-title">User's Voice</span>
-                    </h4>
-                    <div class="discount-banner-percent"></div>
-                    <div class="user-stories-list">
-                        <div class="story-wrap">
-                            <div class="story-item">
-                                <span class="d-block">最近学習成果を実感できてきた～</span>
-                                <span class="user-author d-block">Y・T様</span>
-                                <p class="my-0">
-                                    今まで聞き取れなかったものが「分かるじゃん！」ってなるとホントに嬉しい～。しかも頭の中で一旦翻訳している感じもなく、意味もわかるようになってきてる！
-                                </p>
-                            </div>
-                            <div class="story-item">
-                                <span class="d-block">楽しくないのに我慢しなんかしなくても良い</span>
-                                <span class="user-author d-block">U・K様</span>
-                                <p class="my-0">
-                                    ラングリッチ に出会う前は単調な発音練習や単語暗記、英語の聞き流しなど楽しくないものも我慢してやるのが大事と思ってた。
-                                </p>
-                            </div>
-                            <div class="story-item">
-                                <span class="d-block">ビデオレッスンの方が、やっぱ講師と仲良くなれるからよいと思う</span>
-                                <span class="user-author d-block">Z・K様</span>
-                                <p class="my-0">
-                                    やはり顔を見て話せるのがよい。頻繁に顔を合わせて25分話すことにより、講師の方とも仲良くなりました(^_^)
-                                </p>
-                            </div>
-                            <div class="story-item">
-                                <span class="d-block">毎日話している内に苦手意識がなくなりました！</span>
-                                <span class="user-author d-block">K・Y様</span>
-                                <p class="my-0">
-                                    毎日話すことで、英語に対するアレルギーがなくなりました。「英語脳？」になることが出来たのか、最近では自然に英語が出てくるようになりました。
-                                </p>
-                            </div>
-                            <div class="story-item">
-                                <span class="d-block">汗ダラダラでも何とかなるのがテキストレッスン！</span>
-                                <span class="user-author d-block">T・M様</span>
-                                <p class="my-0">
-                                    英会話全然出来ない人でも、ベーシックテキストのGood morning!から始めればなんとかなります。汗ダラダラでしたけど！
-                                </p>
-                            </div>
-                            <div class="story-item">
-                                <span class="d-block">目覚ましレッスン</span>
-                                <span class="user-author d-block">K・E様</span>
-                                <p class="my-0">
-                                    目覚めのレッスン。レッスンから一日がはじまる感じがイイ！
-                                </p>
-                            </div>
-                            <div class="story-item">
-                                <span class="d-block">英検1級一次試験合格！！自分の進歩にビックリ！</span>
-                                <span class="user-author d-block">C・O様</span>
-                                <p class="my-0">
-                                    英検1級一次試験合格だー！！毎回のレッスンで記事をたくさん読んだことと、25分×120回のリスニングが確実に効いた。前回20点くらい点数が足りなかったから、自分の進歩にビックリ！
-                                </p>
-                            </div>
-                            <div class="story-item">
-                                <span class="d-block">話題に困らないくらいには英語力があがってきたかな。</span>
-                                <span class="user-author d-block">D・E様</span>
-                                <p class="my-0">
-                                    最初の頃は話題を探すのが面倒だったけど、最近はそうでもない。これも何気ないことを話題にできる程度には英語力が上がってきたということか。
-                                </p>
-                            </div>
-                            <div class="story-item">
-                                <span class="d-block">自分の英語力を正しく把握できるツールですね。</span>
-                                <span class="user-author d-block">I・S様</span>
-                                <p class="my-0">
-                                    初級者用テキストを使って実際に英会話レッスンを受けると、中学で習った英語でも実は話せない/聞き取れないことがわかりました。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="stories-pagination d-flex justify-content-around text-center">
-                            <a class="story-paginator-nav text-left previous-story-nav w-100 pl-3">
-                                <span class="fas fa-caret-left mr-3"></span> 過去の3件</a>
-                            <a class="story-paginator-nav text-right  next-story-nav w-100 pr-3">
-                                新しい3件 <span class="fas fa-caret-right ml-3"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="d-flex">
-            <a href="#" class="banner-button"></a>
-        </div>
-    </section>
-    <section class="jumbotron how-it-works pt-0">
-        <div class="container">
-            <div class="row mb-2">
-                <div class="col-xl-10 offset-sm-1 commit-message">
-                    <div class="row">
-                        <div class="col-xl-7">
-                            <h4> 3ヶ月でお客様の英語力向上に</h4>
-                            <span class="percent-highlight">100%コミット</span>
-                            <h4 class="guaranteed-highlight font-weight-bold">全額返金保証付き</h4>
-                            <h4 class="mb-4">ラングリッチの学習プログラム</h4>
-
-                            <div class="media">
-                                <div class="icon-wls mr-3"></div>
-                                <div class="media-body wls-message align-self-center">
-                                    動画教材を見る、学ぶ、話す<br/>毎日１動画
-                                </div>
-                            </div>
-
-                            <div class="media">
-                                <div class="icon-tutor mr-3"></div>
-                                <div class="media-body tutor-message align-self-center">
-                                    マンツーマンレッスンを<br/>毎日１レッスン
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-xl-5 pl-0 lady-cheer-wrap">
-                            <div class="lady-cheer mt-5"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col-xl-10 offset-sm-1">
-                        動画教材で単語や表現を予習できるので、マンツーマンレッスンの時に英語をしっかり話せます。
-                        このプログラムを3ヶ月継続して、英語力が上がらなかった場合は、全額返金保証させていただきます。
-                        *英語力の向上は、ラングリッチが指定するスピーキングテストを受けて判断いたします。詳しく見る>>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-xl-12">
                         <h4 class="latest-main-title pb-2">パワーアップしたラングリッチ
                             <span class="latest-sub-title">The Langrich Upgrade</span>
                         </h4>
                         <p>
-                            ラングリッチはEnglishCentralと統合することでよりパワーアップしました。プロの英会話講師とのマンツーマンレッスンと、世界中に認められているEnglishCentralの英語学習動画で、あなたの英語力の向上に全力でコミットします。
+                            [Replace the text here]<br>
+                            ・Bullet1<br>
+                            ・Bullet2<br>
+                            ・Bullet3<br>
                         </p>
                         <div class="d-flex step-wrap justify-content-center flex-wrap mb-1">
                             <div class="step-watch d-flex align-items-center mx-2 mb-2">
@@ -360,6 +123,203 @@
             </div>
         </div>
     </section>
+    <section class="jumbotron features text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-xl-1 text-left py-4">
+                    <h4 class="feature-main-title">EnglishCentral 5つの特長
+                        <span class="feature-sub-title">Five features</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="row feature-items">
+                <div class="col-xl-2 px-0 offset-xl-1 feature-item feature-item-1">
+                    <h1 class="feature-title mb-3">1</h1>
+                    <p>
+                        毎日話して<br/>
+                        月額6,000円
+                    </p>
+                    <p class="px-2">
+                        低価格×高品質を実現したオンライン英会話。講師・教材・カリキュラムなど、品質面でも他社の追随を許しません。
+                    </p>
+                </div>
+
+                <div class="col-xl-2 px-0 feature-item feature-item-2">
+                    <h1 class="feature-title mb-3">2</h1>
+                    <p>
+                        じっくり話せる<br/>
+                        完全マンツーマン制
+                    </p>
+                    <p class="px-2">
+                        英語上達の秘訣はとにかく沢山話すこと。完全マンツーマンのオンライン英会話で英語力を伸ばしましょう！
+                    </p>
+                </div>
+
+                <div class="col-xl-2 px-0 feature-item feature-item-3">
+                    <h1 class="feature-title mb-3">3</h1>
+                    <p>
+                        どこでも<br/>
+                        学べる英会話
+                    </p>
+                    <p class="px-2">
+                        スマートフォン・タブレット対応で、いつでもどこでも自由にオンライン英会話をお楽しみいただけます。
+                    </p>
+                </div>
+
+                <div class="col-xl-2 px-0 feature-item feature-item-4">
+                    <h1 class="feature-title mb-3">4</h1>
+                    <p>
+                        ビデオレッスンで<br/>
+                        学習効果UP!
+                    </p>
+                    <p class="px-2">
+                        光回線導入済みのオフィスから、クリアな音声・映像によるビデオレッスンをお届けいたします！
+                    </p>
+                </div>
+
+                <div class="col-xl-2 px-0 feature-item feature-item-5">
+                    <h1 class="feature-title mb-3">5</h1>
+                    <p>
+                        業界トップクラスの<br/>
+                        サービス提供時間
+                    </p>
+                    <p class="px-2">
+                        早朝5時～深夜1時までサービスを提供しているので、社会人の方から、主婦・学生の方まで、幅広いニーズにお応えいたします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="jumbotron offer pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 pr-4">
+                    <h4 class="offer-main-title pb-2">EnglishCentralが選ばれる理由
+                        <span class="offer-sub-title">Why Choose Langrich</span>
+                    </h4>
+                    <div class="row gallery-wrap">
+                        <div class="col-xl-6 mb-4">
+                            <div class="image-item image-item-1"></div>
+                        </div>
+                        <div class="col-xl-6 mb-4">
+                            <div class="image-item image-item-2"></div>
+                        </div>
+                    </div>
+                    <div class="row gallery-wrap">
+                        <div class="col-xl-6 mb-4">
+                            <div class="image-item image-item-3"></div>
+                        </div>
+                        <div class="col-xl-6 mb-4">
+                            <div class="image-item image-item-4"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-12">
+
+                        <span class="d-flex point-item align-items-center mt-4 mb-4">
+                            <span class="offer-point mr-3">1</span> 安定したレッスン環境</span>
+                            </span>
+                            <ul class="pl-4 point-description">
+                                <li>日本大使館も入居しているビルで、回線品質も良く安定したレッスンを提供することが出来ます。</li>
+                            </ul>
+
+                            <span class="d-flex point-item align-items-center mb-4">
+                            <span class="offer-point point-2 mr-3">2</span> トップ2%で構成 されるハイレベル講師陣
+                        </span>
+                            <ul class="pl-4 point-description">
+                                <li>EnglishCentralの講師陣は、採用後もレッスンを提供していない空き時間などに継続的にトレーニングと能力査定を受けることで恒常的なレッスン品質向上を行っています。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 px-4">
+                    <h4 class="user-voice-main-title pb-2">お客様の声
+                        <span class="offer-sub-title">User's Voice</span>
+                    </h4>
+                    <div class="discount-banner-percent"></div>
+                    <div class="user-stories-list">
+                        <div class="story-wrap">
+                            <div class="story-item">
+                                <span class="d-block">最近学習成果を実感できてきた～</span>
+                                <span class="d-block user-author">Y・T様</span>
+                                <p class="my-0">
+                                    今まで聞き取れなかったものが「分かるじゃん！」ってなるとホントに嬉しい～。しかも頭の中で一旦翻訳している感じもなく、意味もわかるようになってきてる！
+                                </p>
+                            </div>
+                            <div class="story-item">
+                                <span class="d-block">楽しくないのに我慢しなんかしなくても良い</span>
+                                <span class="d-block user-author">U・K様</span>
+                                <p class="my-0">
+                                    EnglishCentral に出会う前は単調な発音練習や単語暗記、英語の聞き流しなど楽しくないものも我慢してやるのが大事と思ってた。
+                                </p>
+                            </div>
+                            <div class="story-item">
+                                <span class="d-block">ビデオレッスンの方が、やっぱ講師と仲良くなれるからよいと思う</span>
+                                <span class="d-block user-author">Z・K様</span>
+                                <p class="my-0">
+                                    やはり顔を見て話せるのがよい。頻繁に顔を合わせて25分話すことにより、講師の方とも仲良くなりました(^_^)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="stories-pagination d-flex justify-content-around text-center">
+                            <a class="story-paginator-nav text-left previous-story w-100 pl-3">
+                                <span class="fas fa-caret-left mr-3"></span> 過去の3件</a>
+                            <a class="story-paginator-nav text-right  next-story w-100 pr-3">
+                                新しい3件 <span class="fas fa-caret-right ml-3"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <a href="#" class="banner-button"></a>
+        </div>
+    </section>
+
+    <ec-authentication-modal-app email=""></ec-authentication-modal-app>
+    <section class="jumbotron how-it-works pt-0">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-xl-10 offset-sm-1 commit-message">
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <h4> 3ヶ月でお客様の英語力向上に</h4>
+                            <span class="percent-highlight">100%コミット</span>
+                            <h4 class="guaranteed-highlight font-weight-bold">全額返金保証付き</h4>
+                            <h4 class="mb-4">EnglishCentralの学習プログラム</h4>
+
+                            <div class="media">
+                                <div class="icon-wls mr-3"></div>
+                                <div class="media-body wls-message align-self-center">
+                                    動画教材を見る、学ぶ、話す<br/>毎日１動画
+                                </div>
+                            </div>
+
+                            <div class="media">
+                                <div class="icon-tutor mr-3"></div>
+                                <div class="media-body tutor-message align-self-center">
+                                    マンツーマンレッスンを<br/>毎日１レッスン
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-5 pl-0 lady-cheer-wrap">
+                            <div class="lady-cheer mt-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-xl-10 offset-sm-1">
+                        動画教材で単語や表現を予習できるので、マンツーマンレッスンの時に英語をしっかり話せます。
+                        このプログラムを3ヶ月継続して、英語力が上がらなかった場合は、全額返金保証させていただきます。
+                        *英語力の向上は、EnglishCentralが指定するスピーキングテストを受けて判断いたします。詳しく見る>>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section class="jumbotron partners pb-5">
@@ -369,7 +329,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <p class="text-center">ラングリッチは下記の企業様を始め、多くのお客様にご利用頂いております。</p>
+                    <p class="text-center">EnglishCentralは下記の企業様を始め、多くのお客様にご利用頂いております。</p>
                 </div>
             </div>
             <div class="row">
@@ -409,7 +369,6 @@
         </a>
     </div>
 </footer>
-<iframe style="display: none" src="https://ja.qaenglishcentral.com/?partnerKey=56adeafcff6787686c66792e342a341c"></iframe>
 <script>
     function async(u, c) {
         var d = document, t = 'script',
@@ -427,10 +386,9 @@
         s.parentNode.insertBefore(o, s);
     }
 
-    async("https://www.localenglishcentral.com/dist/sdk/authentication.js", function () {
+    async('https://www.qaenglishcentral.com/dist/sdk/authentication.js', function () {
         window.ecLoginInititialize();
     });
 </script>
-
 </body>
 </html>
