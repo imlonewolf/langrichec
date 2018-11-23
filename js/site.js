@@ -1,8 +1,16 @@
 (function ($) {
     $(document).ready(function() {
+        initialize();
         initializeActivityVideo();
         initializeUserStories();
+        initializeScrollTop();
+        initializeBannerRegister();
     });
+
+    function initialize() {
+        window.updateIdentity = function () {
+        };
+    }
 
     function initializeActivityVideo() {
         $(".activity-thumbnail-video").click(function (elem) {
@@ -40,7 +48,7 @@
         var currentPage = 0;
 
         var items = [];
-        elem.each(function (i, elem) {
+        elem.each(function (i) {
             var storyItem = $(this);
             var messageElem = storyItem.find(".user-message");
 
@@ -50,8 +58,6 @@
             messageElem.addClass("d-none");
             items.push(storyItem);
         });
-
-
 
         function hasNext() {
             if (currentPage < (totalItem - 1)) {
@@ -151,6 +157,25 @@
                 getPrevious();
             }
             checkNavState();
+        });
+    }
+
+    function initializeScrollTop() {
+        $(".back-to-top").click(function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+    }
+
+
+    function initializeBannerRegister() {
+        $(".big-banner-button").click(function () {
+            if (!_.has(window, "authenticationModalApp")) {
+                return;
+            }
+            window.authenticationModalApp.zone.run(function () {
+                window.authenticationModalApp.app.launchRegister();
+            });
         });
     }
 }($));

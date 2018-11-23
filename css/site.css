@@ -232,7 +232,7 @@ section.jumbotron {
     background: url("/images/banner-upgrade.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0 5%;
+    background-position: 0 43%;
     border-radius: 0;
 }
 
@@ -259,14 +259,74 @@ section.jumbotron {
 }
 
 .banner-button {
+    background-image: url("/images/big-button-banner-trans.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
     height: 18em;
     width: 100%; 
-    background-image: url("/images/big-button-banner-trans.png");
 }
 
+.big-banner-button {
+    position: relative;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+.banner-button-bg {
+    background-image: url("/images/banner-btn-bg.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: 50%;
+    height: 11em;
+    width: 100%;
+    border-radius: 0.5em;
+}
+.banner-button-girl {
+    background-image: url("/images/banner-girl.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 18em;
+    width: 18em;
+    border-radius: 0.5em;
+    position: absolute;
+    top: -3.4em;
+    left: 6%;
+}
+.banner-button-laptop {
+    background-image: url("/images/laptop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 14em;
+    width: 24em;
+    border-radius: 0.5em;
+    position: absolute;
+    top: -1.3em;
+    right: 3%;
+}
+
+.banner-text-1 {
+    font-size: 0.85em;
+}
+
+.banner-button-text-wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.banner-button-text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.2em;
+    text-align: center;
+    margin-left: -3em;
+    text-shadow: 1px 2px 3px #7BA436;
+}
 .icon-wls {
     background: url("/images/wls-icon.png");
     background-repeat: no-repeat;
@@ -320,8 +380,6 @@ section.jumbotron {
 
 .user-stories-list {
 }
-
-
 
 .story-item {
     border-left: dotted 1px #ccc;
@@ -388,7 +446,7 @@ section.jumbotron {
 }
 
 .latest-main-title {
-    background: url("/images/dialog_3star.png");
+    background-image: url("/images/dialog_3star.png");
     background-repeat: no-repeat;
     padding-left: 1.7em;
     background-position: 0 20%;
@@ -652,6 +710,35 @@ footer {
     }
     .contact-us-widget {
         top: 3.5em;
+    }
+
+
+    /**Banner button**/
+    .big-banner-button {
+        font-size: 0.5em;
+    }
+
+    .banner-button-girl {
+        left: -1em;
+    }
+
+    .banner-button-laptop {
+        display: none;
+    }
+
+    .banner-button-text {
+        margin-left: 6em;
+        font-size: 1.8em;
+    }
+
+    .how-it-works {
+        background-image: none;
+        background-color: #fff;
+    }
+
+    .upgrade-info {
+        padding-right: 0.7em !important;
+        padding-left: 0.7em !important;;
     }
 }
 
