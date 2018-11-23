@@ -329,6 +329,13 @@ section.jumbotron {
     border-bottom: dotted 1px #ccc;
     padding: 0.8em;
     font-size: 0.9em;
+    min-height: 9em;
+}
+
+.see-more-link,
+.see-less {
+    color: #1a7aa7;
+    cursor: pointer;
 }
 
 .user-author {

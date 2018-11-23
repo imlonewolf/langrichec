@@ -42,36 +42,61 @@
         var items = [];
         elem.each(function (i, elem) {
             var storyItem = $(this);
+            var messageElem = storyItem.find(".user-message");
+
             storyItem.attr("data-index", i);
             storyItem.addClass("d-none");
+            bindEventUserMessage(storyItem);
+            messageElem.addClass("d-none");
             items.push(storyItem);
         });
 
 
-        var hasNext = function () {
+
+        function hasNext() {
             if (currentPage < (totalItem - 1)) {
                 return true;
             }
             return false;
-        };
+        }
 
-        var hasPrevious = function () {
+        function hasPrevious() {
             if (currentPage <= 0) {
                 return false;
             }
 
             return true;
-        };
+        }
 
-        var getNext = function () {
+        function getNext() {
             getData(currentPage + 1);
-        };
+        }
 
-        var getPrevious = function () {
+        function getPrevious() {
             getData(currentPage - 1);
-        };
+        }
 
-        var getData = function (page) {
+        function bindEventUserMessage(elem) {
+            var seeMoreWrapElem = elem.find(".see-more");
+            var seeMoreElem = elem.find(".see-more-link");
+            var seeLessElem = elem.find(".see-less");
+
+            seeLessElem.addClass("d-none");
+            seeMoreElem.click(function () {
+                seeMoreWrapElem.addClass("d-none");
+                seeLessElem.removeClass("d-none");
+                elem.find(".user-message").removeClass("d-none");
+            });
+
+            seeLessElem.click(function () {
+                seeLessElem.addClass("d-none");
+                seeMoreWrapElem.removeClass("d-none");
+                elem.find(".user-message").addClass("d-none");
+            });
+        }
+
+
+        function getData(page) {
             currentPage = page;
             var currentItems = _.slice(items, page * LIMIT_STORIES, (page + 1) * LIMIT_STORIES);
             var indexes = _.map(currentItems, function (e) {
@@ -86,26 +111,26 @@
                     currentElem.addClass("d-none");
                 }
             });
-        };
+        }
 
-        var checkPreviousNav = function () {
+        function checkPreviousNav() {
             previousNavElem.removeClass("disable-nav");
             if (!hasPrevious()) {
                 previousNavElem.addClass("disable-nav");
             }
-        };
+        }
 
-        var checkNextNav = function () {
+       function checkNextNav() {
             nextNavElem.removeClass("disable-nav");
             if (!hasNext()) {
                 nextNavElem.addClass("disable-nav");
             }
-        };
+        }
 
-        var checkNavState = function () {
+        function checkNavState() {
             checkNextNav();
             checkPreviousNav();
-        };
+        }
 
         initialize();
 
@@ -113,8 +138,6 @@
             getData(currentPage);
             checkNavState();
         }
-
-
 
         nextNavElem.click(function () {
             if (hasNext()) {
