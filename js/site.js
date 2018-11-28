@@ -9,6 +9,9 @@
 
     function initialize() {
         window.updateIdentity = function () {
+            setTimeout(function () {
+                window.location.href = "//ja.qaenglishcentral.com/myenglish";
+            }, 1800);
         };
     }
 

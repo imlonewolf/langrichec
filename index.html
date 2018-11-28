@@ -17,20 +17,17 @@
 </head>
 <body>
 <nav class="site-header sticky-top py-1">
-    <div class="container d-flex px-1">
+    <div class="container d-flex justify-content-center align-items-center px-1">
         <a href="#" class="navbar-brand d-flex align-items-center mr-auto ec-langrich-logo"></a>
-
-<!--        <button class="btn btn-xl btn-signin btn-outline-primary mx-1 px-3">ログイン</button>
-        <button class="btn btn-xl btn-register btn-primary mx-1 px-2">無料登録</button>-->
         <ec-authentication-modal-app
                 lang="ja"
                 mode="login"
                 facebook-enabled="true"
                 google-enabled="true"
-                redirect-url="https://www.qaenglishcentral.com/myenglish/lessons?from=langrich&mode=login"
+                redirect-url="https://ja.qaenglishcentral.com/myenglish/lessons?from=langrich&mode=login"
                 auto-redirect-login="true"
                 auto-redirect-register="false"
-                login-launch-button-text="ログイン"
+                login-launch-button-text="マイページ"
                 register-launch-button-text="無料登録"
                 login-launch-button-enabled="true"
                 register-launch-button-enabled="true"></ec-authentication-modal-app>
@@ -233,7 +230,7 @@
             <div class="row">
                 <div class="col-xl-8 pr-4">
                     <h4 class="offer-main-title pb-2">EnglishCentralが選ばれる理由
-                        <span class="offer-sub-title">Why Choose Langrich</span>
+                        <span class="offer-sub-title">Why Choose EnglishCentral</span>
                     </h4>
                     <div class="row gallery-wrap">
                         <div class="col-xl-6 mb-4">
@@ -266,7 +263,7 @@
                             <span class="offer-point point-2 mr-3">2</span> トップ2%で構成 されるハイレベル講師陣
                         </span>
                             <ul class="pl-4 point-description">
-                                <li>ラングリッチの講師陣は、採用後もレッスンを提供していない空き時間などに継続的にトレーニングと能力査定を受けることで恒常的なレッスン品質向上を行っています。</li>
+                                <li>EnglishCentralの講師陣は、採用後もレッスンを提供していない空き時間などに継続的にトレーニングと能力査定を受けることで恒常的なレッスン品質向上を行っています。</li>
                             </ul>
                         </div>
                     </div>
@@ -428,7 +425,7 @@
                     <div class="col-xl-10 offset-sm-1">
                         動画教材で単語や表現を予習できるので、マンツーマンレッスンの時に英語をしっかり話せます。
                         このプログラムを3ヶ月継続して、英語力が上がらなかった場合は、全額返金保証させていただきます。
-                        *英語力の向上は、ラングリッチが指定するスピーキングテストを受けて判断いたします。詳しく見る>>
+                        *英語力の向上は、EnglishCentralが指定するスピーキングテストを受けて判断いたします。詳しく見る>>
                     </div>
                 </div>
             </div>
@@ -486,7 +483,7 @@
 </main>
 <footer class="footer py-2">
     <div class="container d-flex justify-content-between align-items-center h-100 footer-content">
-        <span class="powered-by">Your English Life powered by Langrich & EnglishCentral</span>
+        <span class="powered-by">Your English Life powered by EnglishCentral</span>
         <a class="back-to-top">
             <span>Back to Top</span>
             <span class="fas fa-chevron-circle-up"></span>
@@ -511,9 +508,10 @@
         s.parentNode.insertBefore(o, s);
     }
 
-    async("https://www.localenglishcentral.com/dist/sdk/authentication.js", function () {
+    async("https://www.qaenglishcentral.com/dist/sdk/authentication.js", function () {
         window.ecLoginInititialize();
     });
+
 </script>
 
 </body>

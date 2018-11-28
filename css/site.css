@@ -677,10 +677,10 @@ footer {
         margin-left: 0.4em;
     }
 
-    .btn-signin,
-    .btn-register {
+    #authentication-app-launch button {
         padding-right: 0.5em !important;
         padding-left:  0.5em !important;
+        font-size: 0.9em;
     }
 
     .banner {
@@ -739,6 +739,10 @@ footer {
     .upgrade-info {
         padding-right: 0.7em !important;
         padding-left: 0.7em !important;;
+    }
+
+    .percent-highlight {
+        font-size: 2.5em;
     }
 }
 
