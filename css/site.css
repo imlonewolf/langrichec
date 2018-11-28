@@ -751,3 +751,38 @@ footer {
         border: none !important;
     }
 }
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    .banner-intro {
+        background-image: none;
+    }
+
+    .contact-us-widget {
+        top: 4em;
+    }
+    .big-banner-button {
+        font-size: 0.58em;
+    }
+}
+
+
+@media only screen
+and (max-width : 600px)
+and (max-height : 960px) {
+    .contact-us-widget {
+        top: 4em;
+    }
+    .banner-intro {
+        background-image: none;
+    }
+/*    #landing-intro-video {
+        right: -1.7em;
+    }*/
+
+    .big-banner-button {
+        font-size: 0.43em;
+    }
+}
