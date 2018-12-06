@@ -22,15 +22,21 @@
         <ec-authentication-modal-app
                 lang="ja"
                 mode="login"
+                account-registration-tag-id="61"
                 facebook-enabled="true"
                 google-enabled="true"
+                partner-account-id-enabled="true"
+                partner-account-id-label="82"
                 redirect-url="https://ja.qaenglishcentral.com/myenglish/lessons?from=langrich&mode=login"
                 auto-redirect-login="true"
                 auto-redirect-register="false"
                 login-launch-button-text="マイページ"
                 register-launch-button-text="無料登録"
                 login-launch-button-enabled="true"
-                register-launch-button-enabled="true"></ec-authentication-modal-app>
+                register-launch-button-enabled="true">
+            <button class="btn btn-xl btn-signin btn-outline-primary disabled">マイページ</button>
+            <button class="btn btn-xl btn-register btn-primary mx-1 disabled">無料登録</button>
+        </ec-authentication-modal-app>
     </div>
 </nav>
 
@@ -88,26 +94,59 @@
                             <span class="step-watch-text step-text">まずは動画を<br/>見てみよう</span>
                             <span class="fas fa-arrow-right ml-3 mr-2"></span>
                         </div>
-
+                        <div class="activity-thumbnail-video mx-auto mb-2">
+                            <div class="activity-poster activity-watch-poster"></div>
+                            <video class="activity-video d-none" poster="/images/video-poster/watch.jpg" preload="auto">
+                                <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/watch-20170330.webm"
+                                        type="video/webm">
+                                <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/watch-20170330.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
                         <div class="step-learn d-flex align-items-center mx-2 mb-2">
                             <div class="step-thumb step-learn-thumb mr-2"></div>
                             <span class="step-learn-text step-text">単語クイズを<br/>受けてみよう</span>
                             <span class="fas fa-arrow-right ml-3 mr-2"></span>
                         </div>
-
+                        <div class="activity-thumbnail-video mx-auto mb-2">
+                            <div class="activity-poster activity-learn-poster"></div>
+                            <video class="activity-video d-none"poster="/images/video-poster/learn.jpg" preload="auto">
+                                <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/learn-20170330.webm"
+                                        type="video/webm">
+                                <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/learn-20170330.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
                         <div class="step-speak d-flex align-items-center mx-2 mb-2">
                             <div class="step-thumb step-speak-thumb mr-2"></div>
                             <span class="step-speak-text step-text">発音のフィード<br/>バックをもらおう</span>
                             <span class="fas fa-arrow-right ml-3 mr-2"></span>
                         </div>
-
+                        <div class="activity-thumbnail-video mx-auto mb-2">
+                            <div class="activity-poster activity-speak-poster"></div>
+                            <video class="activity-video d-none" poster="/images/video-poster/speak.jpg" preload="auto">
+                                <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/speak-20170330.webm"
+                                        type="video/webm">
+                                <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/speak-20170330.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
                         <div class="step-golive d-flex align-items-center mx-2 mb-2">
                             <div class="step-thumb step-golive-thumb mr-2"></div>
                             <span class="step-golive-text step-text">マンツーマン<br/>レッスン！</span>
                         </div>
+                        <div class="activity-thumbnail-video mx-auto mb-2">
+                            <div class="activity-poster activity-golive-poster"></div>
+                            <video class="activity-video d-none"poster="/images/video-poster/golive.jpg" preload="auto">
+                                <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/golive-20170330.webm"
+                                        type="video/webm">
+                                <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/golive-20170330.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
                     </div>
 
-                    <div class="d-flex justify-content-center flex-wrap w-100">
+                    <div class="d-flex activity-step-video justify-content-center flex-wrap w-100">
                         <div class="activity-thumbnail-video mx-2 mb-2">
                             <div class="activity-poster activity-watch-poster"></div>
                             <video id="watch-demo" class="activity-video d-none" poster="/images/video-poster/watch.jpg" preload="auto">
@@ -490,7 +529,6 @@
         </a>
     </div>
 </footer>
-<iframe style="display: none" src="https://ja.qaenglishcentral.com/?partnerKey=56adeafcff6787686c66792e342a341c"></iframe>
 <script>
     function async(u, c) {
         var d = document, t = 'script',

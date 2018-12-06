@@ -525,6 +525,10 @@ section.jumbotron {
     color: #F6B700;
 }
 
+.step-wrap .activity-thumbnail-video {
+    display: none;
+}
+
 .activity-thumbnail-video {
     display: inline-block;
     cursor: pointer;
@@ -677,12 +681,18 @@ footer {
         margin-left: 0.4em;
     }
 
-    #authentication-app-launch button {
+    #authentication-app-launch button{
         padding-right: 0.5em !important;
         padding-left:  0.5em !important;
         font-size: 0.9em;
     }
 
+    .btn-signin,
+    .btn-register {
+        padding-right: 0.5em !important;
+        padding-left:  0.5em !important;
+        font-size: 0.8em;
+    }
     .banner {
         height: 20em;
     }
@@ -708,6 +718,17 @@ footer {
     .step-wrap {
         justify-content: flex-start !important;
     }
+
+    .step-wrap .activity-thumbnail-video {
+        display: inline-block;
+    }
+    .step-wrap .fa-arrow-right {
+        display: none;
+    }
+    .activity-step-video {
+        display: none !important;
+    }
+
     .contact-us-widget {
         top: 3.5em;
     }

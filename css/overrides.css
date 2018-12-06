@@ -22,3 +22,19 @@
     border: 1px solid #9C232A;
     color: #fff;
 }
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    border: 1px solid #9C232A;
+    color: #9C232A;
+}
+
+.btn-outline-primary.disabled:hover,
+.btn-outline-primary:disabled:hover {
+    background: none;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff;
+    background-color: #9C232A;
+    border-color: #9C232A;
+}
