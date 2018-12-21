@@ -48,9 +48,9 @@
     <section class="jumbotron banner text-center">
         <div class="container d-flex justify-content-center">
             <div class="banner-intro">
-                <video id="landing-intro-video" muted autoplay loop controls>
-                    <source src="/assets/intro-video.mp4" type="video/mp4">
-                    <source src="/assets/intro-video.webm" type="video/webm">
+                <video id="landing-intro-video" muted autoplay playsinline loop controls>
+                    <source src="/assets/intro-video-20181130.mp4" type="video/mp4">
+                    <source src="/assets/intro-video-20181130.webm" type="video/webm">
                 </video>
             </div>
 
@@ -73,7 +73,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-10 offset-xl-1 px-0 upgrade-info">
-                    <h4 class="latest-main-title pb-2 mb-3">パワーアップしたラングリッチ
+                    <h4 class="latest-main-title pb-2 mb-3">パワーアップした<br />ラングリッチ
                         <span class="latest-sub-title">The Langrich Upgrade</span>
                     </h4>
                     <p class="mb-3">
@@ -201,7 +201,7 @@
             </div>
             <div class="row">
                 <div class="col-10 offset-xl-1 text-left py-4">
-                    <h4 class="feature-main-title">EnglishCentral 5つの特長
+                    <h4 class="feature-main-title">EnglishCentral<br /> 5つの特長
                         <span class="feature-sub-title">Five features</span>
                     </h4>
                 </div>
@@ -258,7 +258,7 @@
                         サービス提供時間
                     </p>
                     <p class="px-2">
-                        早朝5時～深夜1時までサービスを提供しているので、社会人の方から、主婦・学生の方まで、幅広いニーズにお応えいたします。
+                        24時間サービスを提供しているので、社会人の方から、主婦・学生の方まで、幅広いニーズにお応えいたします。
                     </p>
                 </div>
             </div>
@@ -464,7 +464,7 @@
                     <div class="col-xl-10 offset-sm-1">
                         動画教材で単語や表現を予習できるので、マンツーマンレッスンの時に英語をしっかり話せます。
                         このプログラムを3ヶ月継続して、英語力が上がらなかった場合は、全額返金保証させていただきます。
-                        *英語力の向上は、EnglishCentralが指定するスピーキングテストを受けて判断いたします。詳しく見る>>
+                        *英語力の向上は、EnglishCentralが指定するスピーキングテストを受けて判断いたします。
                     </div>
                 </div>
             </div>
@@ -524,7 +524,7 @@
     <div class="container d-flex justify-content-between align-items-center h-100 footer-content">
         <span class="powered-by">Your English Life powered by EnglishCentral</span>
         <a class="back-to-top">
-            <span>Back to Top</span>
+            <span>トップに戻る</span>
             <span class="fas fa-chevron-circle-up"></span>
         </a>
     </div>
@@ -547,7 +547,7 @@
     }
 
     async("https://www.qaenglishcentral.com/dist/sdk/authentication.js", function () {
-        window.ecLoginInititialize();
+        window.ecLoginInitialize();
     });
 
 </script>
