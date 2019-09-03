@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,9 +16,21 @@
     <script type="text/javascript" src="/vendor/lodash/lodash.min.js"></script>
     <script type="text/javascript" src="/js/site.js"></script>
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17308262-18"></script>
+<script>
+    if (isProd()) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag()
+
+        {dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-17308262-18');
+    }
+</script>
 <body>
 <nav class="site-header sticky-top py-1">
-    <div class="container d-flex justify-content-center align-items-center px-1">
+    <div class="container d-flex align-items-center px-1">
         <a href="#" class="navbar-brand d-flex align-items-center mr-auto ec-langrich-logo"></a>
         <ec-authentication-modal-app
                 lang="ja"
@@ -25,13 +38,18 @@
                 account-registration-tag-id="61"
                 facebook-enabled="true"
                 google-enabled="true"
+                always-display-facebook="true"
+                always-display-google="true"
                 partner-account-id-enabled="true"
                 partner-account-id-label="82"
-                redirect-url="https://ja.qaenglishcentral.com/myenglish/lessons?from=langrich&mode=login"
+                partner-id="82"
+                redirect-url="https://ja.englishcentral.com/partner/langrich?redirect=/myenglish/lessons&delay=true&from=langrich&mode=login"
                 auto-redirect-login="true"
                 auto-redirect-register="false"
                 login-launch-button-text="マイページ"
                 register-launch-button-text="無料登録"
+                login-header-text="ログイン"
+                register-header-text="無料登録"
                 login-launch-button-enabled="true"
                 register-launch-button-enabled="true">
             <button class="btn btn-xl btn-signin btn-outline-primary disabled">マイページ</button>
@@ -48,12 +66,11 @@
     <section class="jumbotron banner text-center">
         <div class="container d-flex justify-content-center">
             <div class="banner-intro">
-                <video id="landing-intro-video" muted autoplay playsinline loop controls>
+                <video id="landing-intro-video" poster="/images/intro-video-poster.png" muted autoplay playsinline loop controls>
                     <source src="/assets/intro-video-20181130.mp4" type="video/mp4">
                     <source src="/assets/intro-video-20181130.webm" type="video/webm">
                 </video>
             </div>
-
         </div>
     </section>
     <section class="jumbotron features">
@@ -94,9 +111,13 @@
                             <span class="step-watch-text step-text">まずは動画を<br/>見てみよう</span>
                             <span class="fas fa-arrow-right ml-3 mr-2"></span>
                         </div>
-                        <div class="activity-thumbnail-video mx-auto mb-2">
+                        <div class="activity-thumbnail-video activity-thumbnail-watch mx-auto mb-2">
                             <div class="activity-poster activity-watch-poster"></div>
-                            <video class="activity-video d-none" poster="/images/video-poster/watch.jpg" preload="auto">
+                            <video class="activity-video d-none"
+                                   poster="/images/video-poster/watch.jpg"
+                                   webkit-playsinline
+                                   playsinline
+                                   preload="auto">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/watch-20170330.webm"
                                         type="video/webm">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/watch-20170330.mp4"
@@ -108,9 +129,13 @@
                             <span class="step-learn-text step-text">単語クイズを<br/>受けてみよう</span>
                             <span class="fas fa-arrow-right ml-3 mr-2"></span>
                         </div>
-                        <div class="activity-thumbnail-video mx-auto mb-2">
+                        <div class="activity-thumbnail-video activity-thumbnail-learn mx-auto mb-2">
                             <div class="activity-poster activity-learn-poster"></div>
-                            <video class="activity-video d-none"poster="/images/video-poster/learn.jpg" preload="auto">
+                            <video class="activity-video d-none"
+                                   poster="/images/video-poster/learn.jpg"
+                                   webkit-playsinline
+                                   playsinline
+                                   preload="auto">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/learn-20170330.webm"
                                         type="video/webm">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/learn-20170330.mp4"
@@ -122,9 +147,13 @@
                             <span class="step-speak-text step-text">発音のフィード<br/>バックをもらおう</span>
                             <span class="fas fa-arrow-right ml-3 mr-2"></span>
                         </div>
-                        <div class="activity-thumbnail-video mx-auto mb-2">
+                        <div class="activity-thumbnail-video  activity-thumbnail-speak mx-auto mb-2">
                             <div class="activity-poster activity-speak-poster"></div>
-                            <video class="activity-video d-none" poster="/images/video-poster/speak.jpg" preload="auto">
+                            <video class="activity-video d-none"
+                                   poster="/images/video-poster/speak.jpg"
+                                   webkit-playsinline
+                                   playsinline
+                                   preload="auto">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/speak-20170330.webm"
                                         type="video/webm">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/speak-20170330.mp4"
@@ -135,9 +164,13 @@
                             <div class="step-thumb step-golive-thumb mr-2"></div>
                             <span class="step-golive-text step-text">マンツーマン<br/>レッスン！</span>
                         </div>
-                        <div class="activity-thumbnail-video mx-auto mb-2">
+                        <div class="activity-thumbnail-video activity-thumbnail-golive mx-auto mb-2">
                             <div class="activity-poster activity-golive-poster"></div>
-                            <video class="activity-video d-none"poster="/images/video-poster/golive.jpg" preload="auto">
+                            <video class="activity-video d-none"
+                                   poster="/images/video-poster/golive.jpg"
+                                   webkit-playsinline
+                                   playsinline
+                                   preload="auto">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/golive-20170330.webm"
                                         type="video/webm">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/golive-20170330.mp4"
@@ -149,7 +182,11 @@
                     <div class="d-flex activity-step-video justify-content-center flex-wrap w-100">
                         <div class="activity-thumbnail-video mx-2 mb-2">
                             <div class="activity-poster activity-watch-poster"></div>
-                            <video id="watch-demo" class="activity-video d-none" poster="/images/video-poster/watch.jpg" preload="auto">
+                            <video id="watch-demo" class="activity-video activity-video-watch d-none"
+                                   poster="/images/video-poster/watch.jpg"
+                                   webkit-playsinline
+                                   playsinline
+                                   preload="auto">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/watch-20170330.webm"
                                         type="video/webm">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/watch-20170330.mp4"
@@ -158,7 +195,11 @@
                         </div>
                         <div class="activity-thumbnail-video mx-2 mb-2">
                             <div class="activity-poster activity-learn-poster"></div>
-                            <video id="learn-demo" class="activity-video d-none"poster="/images/video-poster/learn.jpg" preload="auto">
+                            <video id="learn-demo" class="activity-video activity-video-learn d-none"
+                                   poster="/images/video-poster/learn.jpg"
+                                   webkit-playsinline
+                                   playsinline
+                                   preload="auto">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/learn-20170330.webm"
                                         type="video/webm">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/learn-20170330.mp4"
@@ -167,7 +208,12 @@
                         </div>
                         <div class="activity-thumbnail-video mx-2 mb-2">
                             <div class="activity-poster activity-speak-poster"></div>
-                            <video id="speak-demo" class="activity-video d-none" poster="/images/video-poster/speak.jpg" preload="auto">
+                            <video id="speak-demo"
+                                   class="activity-video activity-video-speak d-none"
+                                   poster="/images/video-poster/speak.jpg"
+                                   webkit-playsinline
+                                   playsinline
+                                   preload="auto">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/speak-20170330.webm"
                                         type="video/webm">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/speak-20170330.mp4"
@@ -176,7 +222,12 @@
                         </div>
                         <div class="activity-thumbnail-video mx-2 mb-2">
                             <div class="activity-poster activity-golive-poster"></div>
-                            <video id="golive-demo" class="activity-video d-none"poster="/images/video-poster/golive.jpg" preload="auto">
+                            <video id="golive-demo"
+                                   class="activity-video activity-video-golive d-none"
+                                   poster="/images/video-poster/golive.jpg"
+                                   webkit-playsinline
+                                   playsinline
+                                   preload="auto">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/webm/golive-20170330.webm"
                                         type="video/webm">
                                 <source src="https://cdna.englishcentral.com/promo/demo/howitworks/en/mp4/golive-20170330.mp4"
@@ -293,7 +344,6 @@
 
                         <span class="d-flex point-item align-items-center mt-4 mb-4">
                             <span class="offer-point mr-3">1</span> 安定したレッスン環境</span>
-                            </span>
                             <ul class="pl-4 point-description">
                                 <li>日本大使館も入居しているビルで、回線品質も良く安定したレッスンを提供することが出来ます。</li>
                             </ul>
@@ -546,10 +596,9 @@
         s.parentNode.insertBefore(o, s);
     }
 
-    async("https://www.qaenglishcentral.com/dist/sdk/authentication.js", function () {
+    async("https://www.englishcentral.com/dist/sdk/authentication.js", function () {
         window.ecLoginInitialize();
     });
-
 </script>
 
 </body>

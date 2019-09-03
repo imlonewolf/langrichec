@@ -749,7 +749,7 @@ footer {
 
     .banner-button-text {
         margin-left: 6em;
-        font-size: 1.8em;
+        font-size: 2.3em;
     }
 
     .how-it-works {
@@ -764,6 +764,11 @@ footer {
 
     .percent-highlight {
         font-size: 2.5em;
+    }
+
+    .back-to-top {
+        width: 10em;
+        font-size: 0.9em;
     }
 }
 
@@ -799,11 +804,21 @@ and (max-height : 960px) {
     .banner-intro {
         background-image: none;
     }
-/*    #landing-intro-video {
-        right: -1.7em;
-    }*/
-
     .big-banner-button {
         font-size: 0.43em;
+    }
+
+    #landing-intro-video {
+        position: relative;
+        margin: 0 auto;
+        left: auto;
+        right: auto;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .banner-button-text {
+        font-size: 2em;
     }
 }
